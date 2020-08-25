@@ -117,7 +117,7 @@ $(document).ready(function(){
         $('.curr_errors').text(err);
         var v = $('.wordcontainer span').eq(charTyped).offset().top
         v = Math.floor( v-c )
-        console.log(v,c,last);
+        // console.log(v,c,last);
         if(v>0){
             
             $(".wordcontainer").animate({
