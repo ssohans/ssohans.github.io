@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typing Test</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!-- <p>test</p> -->
+    <h1 id='i'>Typing Test</h1>
+    <div class="time">
+        <input type="radio" name="time" value="1" id="1min" class="zz">
+        <input type="radio" name="time" value="2" id="2min" class="zz">
+        <input type="radio" name="time" value="3" id="3min" class="zz">
+        <input type="radio" name="time" value="5" id="5min" class="zz">
+        <label for="1min">1 minute</label>
+        <label for="2min">2 minutes</label>
+        <label for="3min">3 minutes</label>
+        <label for="5min">5 minutes</label>
+
+        <p class="errormin">Please select time!</p>
+    </div>
+    <div class="para">
+    <!-- <label for="pragrpahs">Choose a story to write:</label> -->
+        <select name="pragrpahs" class="opt" placeholder="here i am">
+            <option value="" disabled selected>Select a story to write</option>
+            <option value="1">ALI BABA AND THE FORTY THIEVES </option>
+            <option value="2">THE THREE WISHES</option>
+            <option value="3">SLY FOX </option>
+            <option value="4">BEAUTY AND THE BEAST</option>
+        </select>
+        <p class="errorstory">Please select a story!</p>
+
+        
+    </div>
+    <div class="calculations">
+        <div class = "container">
+            <div class="header"> 
+                <div class="wpm"> 
+                    <div class="header_text">WPM</div> 
+                    <div class="curr_wpm">100</div> 
+                </div> 
+                <div class="cpm"> 
+                    <div class="header_text">CPM</div> 
+                    <div class="curr_cpm">100</div> 
+                </div> 
+                <div class="errors"> 
+                    <div class="header_text">Errors</div> 
+                    <div class="curr_errors">0</div> 
+                </div> 
+                <div class="timer"> 
+                    <div class="header_text">Time</div> 
+                    <div class="curr_time">60s</div> 
+                </div> 
+                <div class="accuracy"> 
+                    <div class="header_text">%Accuracy</div> 
+                    <div class="curr_accuracy">100</div> 
+                </div> 
+            </div>  
+        </div> 
+    </div>
+
+    <div class="words">
+        <div class="wordcontainer">
+            <p>Please wait while loading the story.....</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <textarea placeholder="Start typing here..."></textarea>
+    </div>
+    <div class="notice">
+        <p>N.B. backspace disabled.</p>
+    </div>
+
+    <div class='buttons'>
+        <button id = "start">start</button>
+        <button id = "home">return</button>
+    </div>
+    
+</body>
+</html>
