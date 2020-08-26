@@ -33,6 +33,7 @@ function finish(){
     $('.wpm').show();
     $('.cpm').show();
     $('#home').show();
+    $('#stop').hide();
 }
 
 $(document).ready(function(){
@@ -79,6 +80,10 @@ $(document).ready(function(){
     }
 });
 
+  $('#stop').click(function() {
+      finish();
+  });
+
   $('textarea').on("keydown", function (e) {
     if (e.which === 8 && !$(e.target).is("")) {
         e.preventDefault();
@@ -91,6 +96,7 @@ $(document).ready(function(){
   $('textarea').keypress(function(e) {
 
         if(!start){
+          $('#stop').show();
           interval = setInterval(time_count,1000);
           start = true;
           timer = min*60;
@@ -117,7 +123,7 @@ $(document).ready(function(){
         $('.curr_errors').text(err);
         var v = $('.wordcontainer span').eq(charTyped).offset().top
         v = Math.floor( v-c )
-        // console.log(v,c,last);
+        console.log(v,c,last);
         if(v>0){
             
             $(".wordcontainer").animate({
