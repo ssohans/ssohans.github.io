@@ -121,7 +121,7 @@ button:hover {
    word-wrap: normal;
    overflow: -moz-scrollbars-none;
    font-size: 24px;
-   /*text-align: justify;*/
+   text-align: justify;
    border: none;
 
 }
